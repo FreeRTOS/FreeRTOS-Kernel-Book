@@ -1,11 +1,6 @@
-## My Project
+## FreeRTOS-Kernel-Book
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+This repo contains the contents for FreeRTOS kernel book till it is made public.
 
 ## Security
 
