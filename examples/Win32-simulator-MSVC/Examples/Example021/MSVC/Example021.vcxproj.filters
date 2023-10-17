@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\FreeRTOS_Source">
+      <UniqueIdentifier>{ffa1c60c-b562-4d7d-aaf7-7572b86fc93a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FreeRTOS_Source\include">
+      <UniqueIdentifier>{9eaac105-c1ee-4e7b-b52f-43bd71f8f8ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FreeRTOS_Source\portable">
+      <UniqueIdentifier>{0240c1ee-f8a6-4454-a6d4-d1d804e9daeb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FreeRTOS_Source\list.c">
+      <Filter>Source Files\FreeRTOS_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FreeRTOS_Source\queue.c">
+      <Filter>Source Files\FreeRTOS_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FreeRTOS_Source\tasks.c">
+      <Filter>Source Files\FreeRTOS_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FreeRTOS_Source\portable\MemMang\heap_4.c">
+      <Filter>Source Files\FreeRTOS_Source\portable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FreeRTOS_Source\portable\MSVC-MingW\port.c">
+      <Filter>Source Files\FreeRTOS_Source\portable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\FreeRTOS_Source\include\semphr.h">
+      <Filter>Source Files\FreeRTOS_Source\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\FreeRTOS_Source\include\task.h">
+      <Filter>Source Files\FreeRTOS_Source\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\FreeRTOS_Source\include\timers.h">
+      <Filter>Source Files\FreeRTOS_Source\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\FreeRTOS_Source\include\event_groups.h">
+      <Filter>Source Files\FreeRTOS_Source\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\FreeRTOS_Source\include\list.h">
+      <Filter>Source Files\FreeRTOS_Source\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\FreeRTOS_Source\include\queue.h">
+      <Filter>Source Files\FreeRTOS_Source\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FreeRTOSConfig.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
