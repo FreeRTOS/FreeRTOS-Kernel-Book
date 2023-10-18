@@ -97,8 +97,8 @@ int main( void )
 
 void vTaskFunction( void *pvParameters )
 {
-char *pcTaskName;
-const TickType_t xDelay250ms = pdMS_TO_TICKS( 250UL );
+    char *pcTaskName;
+    const TickType_t xDelay250ms = pdMS_TO_TICKS( 250UL );
 
 	/* The string to print out is passed in via the parameter.  Cast this to a
 	character pointer. */

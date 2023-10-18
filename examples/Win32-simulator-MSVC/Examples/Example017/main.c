@@ -135,6 +135,9 @@ int main( void )
 
 static void vHandlerTask( void *pvParameters )
 {
+	/* Remove compiler warning about unused parameter. */
+	( void ) pvParameters; 
+
 	/* As per most tasks, this task is implemented within an infinite loop. */
 	for( ;; )
 	{
@@ -154,7 +157,11 @@ static void vHandlerTask( void *pvParameters )
 
 static void vPeriodicTask( void *pvParameters )
 {
-const TickType_t xDelay500ms = pdMS_TO_TICKS( 500UL );
+	
+	/* Remove compiler warning about unused parameter. */
+	(void)pvParameters;
+
+	const TickType_t xDelay500ms = pdMS_TO_TICKS( 500UL );
 
 	/* As per most tasks, this task is implemented within an infinite loop. */
 	for( ;; )
@@ -181,7 +188,7 @@ const TickType_t xDelay500ms = pdMS_TO_TICKS( 500UL );
 
 static uint32_t ulExampleInterruptHandler( void )
 {
-BaseType_t xHigherPriorityTaskWoken;
+	BaseType_t xHigherPriorityTaskWoken;
 
 	/* The xHigherPriorityTaskWoken parameter must be initialized to pdFALSE as
 	it will get set to pdTRUE inside the interrupt safe API function if a

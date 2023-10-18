@@ -74,7 +74,7 @@
 /* The number of the simulated interrupt used in this example.  Numbers 0 to 2
 are used by the FreeRTOS Windows port itself, so 3 is the first number available
 to the application. */
-#define mainINTERRUPT_NUMBER	3
+#define mainINTERRUPT_NUMBER    3
 
 /* The tasks to be created. */
 static void vIntegerGenerator( void *pvParameters );
@@ -93,36 +93,36 @@ QueueHandle_t xIntegerQueue, xStringQueue;
 int main( void )
 {
     /* Before a queue can be used it must first be created.  Create both queues
-	used by this example.  One queue can hold variables of type uint32_t,
-	the other queue can hold variables of type char*.  Both queues can hold a
-	maximum of 10 items.  A real application should check the return values to
-	ensure the queues have been successfully created. */
+    used by this example.  One queue can hold variables of type uint32_t,
+    the other queue can hold variables of type char*.  Both queues can hold a
+    maximum of 10 items.  A real application should check the return values to
+    ensure the queues have been successfully created. */
     xIntegerQueue = xQueueCreate( 10, sizeof( uint32_t ) );
-	xStringQueue = xQueueCreate( 10, sizeof( char * ) );
+    xStringQueue = xQueueCreate( 10, sizeof( char * ) );
 
-	/* Create the task that uses a queue to pass integers to the interrupt
-	service	routine.  The task is created at priority 1. */
-	xTaskCreate( vIntegerGenerator, "IntGen", 1000, NULL, 1, NULL );
+    /* Create the task that uses a queue to pass integers to the interrupt
+    service    routine.  The task is created at priority 1. */
+    xTaskCreate( vIntegerGenerator, "IntGen", 1000, NULL, 1, NULL );
 
-	/* Create the task that prints out the strings sent to it from the interrupt
-	service routine.  The task is created at the higher priority of 2. */
-	xTaskCreate( vStringPrinter, "String", 1000, NULL, 2, NULL );
+    /* Create the task that prints out the strings sent to it from the interrupt
+    service routine.  The task is created at the higher priority of 2. */
+    xTaskCreate( vStringPrinter, "String", 1000, NULL, 2, NULL );
 
-	/* Install the handler for the software interrupt.  The syntax necessary
-	to do this is dependent on the FreeRTOS port being used.  The syntax
-	shown here can only be used with the FreeRTOS Windows port, where such
-	interrupts are only simulated. */
-	vPortSetInterruptHandler( mainINTERRUPT_NUMBER, ulExampleInterruptHandler );
+    /* Install the handler for the software interrupt.  The syntax necessary
+    to do this is dependent on the FreeRTOS port being used.  The syntax
+    shown here can only be used with the FreeRTOS Windows port, where such
+    interrupts are only simulated. */
+    vPortSetInterruptHandler( mainINTERRUPT_NUMBER, ulExampleInterruptHandler );
 
-	/* Start the scheduler so the created tasks start executing. */
-	vTaskStartScheduler();
+    /* Start the scheduler so the created tasks start executing. */
+    vTaskStartScheduler();
 
-	/* The following line should never be reached because vTaskStartScheduler()
-	will only return if there was not enough FreeRTOS heap memory available to
-	create the Idle and (if configured) Timer tasks.  Heap management, and
-	techniques for trapping heap exhaustion, are described in the book text. */
-	for( ;; );
-	return 0;
+    /* The following line should never be reached because vTaskStartScheduler()
+    will only return if there was not enough FreeRTOS heap memory available to
+    create the Idle and (if configured) Timer tasks.  Heap management, and
+    techniques for trapping heap exhaustion, are described in the book text. */
+    for( ;; );
+    return 0;
 }
 /*-----------------------------------------------------------*/
 
@@ -133,35 +133,35 @@ const TickType_t xDelay200ms = pdMS_TO_TICKS( 200UL ), xDontBlock = 0;
 uint32_t ulValueToSend = 0;
 BaseType_t i;
 
-	/* Initialize the variable used by the call to vTaskDelayUntil(). */
-	xLastExecutionTime = xTaskGetTickCount();
+    /* Initialize the variable used by the call to vTaskDelayUntil(). */
+    xLastExecutionTime = xTaskGetTickCount();
 
-	for( ;; )
-	{
-		/* This is a periodic task.  Block until it is time to run again.
-		The task will execute every 200ms. */
-		vTaskDelayUntil( &xLastExecutionTime, xDelay200ms );
+    for( ;; )
+    {
+        /* This is a periodic task.  Block until it is time to run again.
+        The task will execute every 200ms. */
+        vTaskDelayUntil( &xLastExecutionTime, xDelay200ms );
 
-		/* Send five numbers to the queue, each value one higher than the
-		previous value.  The numbers are read from the queue by the interrupt
-		service routine.  The interrupt	service routine always empties the
-		queue, so this task is guaranteed to be able to write all five values
-		without needing to specify a block time. */
-		for( i = 0; i < 5; i++ )
-		{
-			xQueueSendToBack( xIntegerQueue, &ulValueToSend, xDontBlock );
-			ulValueToSend++;
-		}
+        /* Send five numbers to the queue, each value one higher than the
+        previous value.  The numbers are read from the queue by the interrupt
+        service routine.  The interrupt    service routine always empties the
+        queue, so this task is guaranteed to be able to write all five values
+        without needing to specify a block time. */
+        for( i = 0; i < 5; i++ )
+        {
+            xQueueSendToBack( xIntegerQueue, &ulValueToSend, xDontBlock );
+            ulValueToSend++;
+        }
 
-		/* Generate the interrupt so the interrupt service routine can read the
-		values from the queue. The syntax used to generate a software interrupt
-		is dependent on the FreeRTOS port being used.  The syntax used below can
-		only be used with the FreeRTOS Windows port, in which such interrupts
-		are only simulated.*/
-		vPrintString( "Generator task - About to generate an interrupt.\r\n" );
-		vPortGenerateSimulatedInterrupt( mainINTERRUPT_NUMBER );
-		vPrintString( "Generator task - Interrupt generated.\r\n\r\n\r\n" );
-	}
+        /* Generate the interrupt so the interrupt service routine can read the
+        values from the queue. The syntax used to generate a software interrupt
+        is dependent on the FreeRTOS port being used.  The syntax used below can
+        only be used with the FreeRTOS Windows port, in which such interrupts
+        are only simulated.*/
+        vPrintString( "Generator task - About to generate an interrupt.\r\n" );
+        vPortGenerateSimulatedInterrupt( mainINTERRUPT_NUMBER );
+        vPrintString( "Generator task - Interrupt generated.\r\n\r\n\r\n" );
+    }
 }
 /*-----------------------------------------------------------*/
 
@@ -169,14 +169,14 @@ static void vStringPrinter( void *pvParameters )
 {
 char *pcString;
 
-	for( ;; )
-	{
-		/* Block on the queue to wait for data to arrive. */
-		xQueueReceive( xStringQueue, &pcString, portMAX_DELAY );
+    for( ;; )
+    {
+        /* Block on the queue to wait for data to arrive. */
+        xQueueReceive( xStringQueue, &pcString, portMAX_DELAY );
 
-		/* Print out the received string. */
-		vPrintString( pcString );
-	}
+        /* Print out the received string. */
+        vPrintString( pcString );
+    }
 }
 /*-----------------------------------------------------------*/
 
@@ -190,45 +190,45 @@ interrupt service routine's stack, and exist even when the interrupt service
 routine is not executing. */
 static const char *pcStrings[] =
 {
-	"String 0\r\n",
-	"String 1\r\n",
-	"String 2\r\n",
-	"String 3\r\n"
+    "String 0\r\n",
+    "String 1\r\n",
+    "String 2\r\n",
+    "String 3\r\n"
 };
 
-	/* As always, xHigherPriorityTaskWoken is initialized to pdFALSE to be able
-	to detect it getting set to pdTRUE inside an interrupt safe API function. */
-	xHigherPriorityTaskWoken = pdFALSE;
+    /* As always, xHigherPriorityTaskWoken is initialized to pdFALSE to be able
+    to detect it getting set to pdTRUE inside an interrupt safe API function. */
+    xHigherPriorityTaskWoken = pdFALSE;
 
-	/* Read from the queue until the queue is empty. */
-	while( xQueueReceiveFromISR( xIntegerQueue, &ulReceivedNumber, &xHigherPriorityTaskWoken ) != errQUEUE_EMPTY )
-	{
-		/* Truncate the received value to the last two bits (values 0 to 3
-		inc.), then use the truncated value as an index into the pcStrings[]
-		array to select a string (char *) to send on the other queue. */
-		ulReceivedNumber &= 0x03;
-		xQueueSendToBackFromISR( xStringQueue, &pcStrings[ ulReceivedNumber ], &xHigherPriorityTaskWoken );
-	}
+    /* Read from the queue until the queue is empty. */
+    while( xQueueReceiveFromISR( xIntegerQueue, &ulReceivedNumber, &xHigherPriorityTaskWoken ) != errQUEUE_EMPTY )
+    {
+        /* Truncate the received value to the last two bits (values 0 to 3
+        inc.), then use the truncated value as an index into the pcStrings[]
+        array to select a string (char *) to send on the other queue. */
+        ulReceivedNumber &= 0x03;
+        xQueueSendToBackFromISR( xStringQueue, &pcStrings[ ulReceivedNumber ], &xHigherPriorityTaskWoken );
+    }
 
     /* If receiving from xIntegerQueue caused a task to leave the Blocked state,
-	and if the priority of the task that left the Blocked state is higher than
-	the priority of the task in the Running state, then xHigherPriorityTaskWoken
-	will have been set to pdTRUE inside xQueueReceiveFromISR().
+    and if the priority of the task that left the Blocked state is higher than
+    the priority of the task in the Running state, then xHigherPriorityTaskWoken
+    will have been set to pdTRUE inside xQueueReceiveFromISR().
 
     If sending to xStringQueue caused a task to leave the Blocked state, and
     if the priority of the task that left the Blocked state is higher than the
     priority of the task in the Running state, then xHigherPriorityTaskWoken
-	will have been set to pdTRUE inside xQueueSendFromISR().
+    will have been set to pdTRUE inside xQueueSendFromISR().
 
     xHigherPriorityTaskWoken is used as the parameter to portYIELD_FROM_ISR().
-	If xHigherPriorityTaskWoken equals pdTRUE then calling portYIELD_FROM_ISR()
+    If xHigherPriorityTaskWoken equals pdTRUE then calling portYIELD_FROM_ISR()
     will request a context switch.  If xHigherPriorityTaskWoken is still pdFALSE
-	then calling portYIELD_FROM_ISR() will have no effect.
+    then calling portYIELD_FROM_ISR() will have no effect.
 
     The implementation of portYIELD_FROM_ISR() used by the Windows port includes
-	a return statement, which is why this function does not explicitly return a
+    a return statement, which is why this function does not explicitly return a
     value. */
-	portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
+    portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
 }
 
 

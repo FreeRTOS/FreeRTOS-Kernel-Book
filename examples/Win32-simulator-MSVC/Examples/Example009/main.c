@@ -91,7 +91,7 @@ int main( void )
 
 void vTask1( void *pvParameters )
 {
-const TickType_t xDelay100ms = pdMS_TO_TICKS( 100UL );
+    const TickType_t xDelay100ms = pdMS_TO_TICKS( 100UL );
 
 	for( ;; )
 	{

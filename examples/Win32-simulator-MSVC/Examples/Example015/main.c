@@ -131,7 +131,7 @@ int main( void )
 
 static void prvBacklightTimerCallback( TimerHandle_t xTimer )
 {
-TickType_t xTimeNow = xTaskGetTickCount();
+	TickType_t xTimeNow = xTaskGetTickCount();
 
 	/* The backlight timer expired, turn the backlight off. */
 	xSimulatedBacklightOn = pdFALSE;
@@ -143,9 +143,9 @@ TickType_t xTimeNow = xTaskGetTickCount();
 
 static void vKeyHitTask( void *pvParameters )
 {
-const TickType_t xShortDelay = pdMS_TO_TICKS( 50 );
-extern BaseType_t xKeyPressesStopApplication;
-TickType_t xTimeNow;
+	const TickType_t xShortDelay = pdMS_TO_TICKS( 50 );
+	extern BaseType_t xKeyPressesStopApplication;
+	TickType_t xTimeNow;
 
 	/* This example uses key presses, so prevent key presses being used to end
 	the application. */

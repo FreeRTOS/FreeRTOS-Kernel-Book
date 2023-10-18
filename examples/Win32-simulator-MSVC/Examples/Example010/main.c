@@ -112,8 +112,8 @@ int main( void )
 
 static void vSenderTask( void *pvParameters )
 {
-int32_t lValueToSend;
-BaseType_t xStatus;
+	int32_t lValueToSend;
+	BaseType_t xStatus;
 
 	/* Two instances are created of this task so the value that is sent to the
 	queue is passed in via the task parameter rather than be hard coded.  This way
@@ -148,10 +148,10 @@ BaseType_t xStatus;
 
 static void vReceiverTask( void *pvParameters )
 {
-/* Declare the variable that will hold the values received from the queue. */
-int32_t lReceivedValue;
-BaseType_t xStatus;
-const TickType_t xTicksToWait = pdMS_TO_TICKS( 100UL );
+	/* Declare the variable that will hold the values received from the queue. */
+	int32_t lReceivedValue;
+	BaseType_t xStatus;
+	const TickType_t xTicksToWait = pdMS_TO_TICKS( 100UL );
 
 	/* This task is also defined within an infinite loop. */
 	for( ;; )
