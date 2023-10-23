@@ -51,7 +51,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\Supporting_Functions;$(ProjectDir)\..\..\..\FreeRTOS_Source\portable\MSVC-MingW;$(ProjectDir)\..\..\..\FreeRTOS_Source\include;$(ProjectDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\Supporting_Functions;$(ProjectDir)\..\..\..\FreeRTOS-Kernel\portable\MSVC-MingW;$(ProjectDir)\..\..\..\FreeRTOS-Kernel\include;$(ProjectDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -76,22 +76,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\FreeRTOS_Source\list.c" />
-    <ClCompile Include="..\..\..\FreeRTOS_Source\portable\MemMang\heap_4.c" />
-    <ClCompile Include="..\..\..\FreeRTOS_Source\portable\MSVC-MingW\port.c" />
-    <ClCompile Include="..\..\..\FreeRTOS_Source\queue.c" />
-    <ClCompile Include="..\..\..\FreeRTOS_Source\tasks.c" />
-    <ClCompile Include="..\..\..\FreeRTOS_Source\timers.c" />
+    <ClCompile Include="..\..\..\FreeRTOS-Kernel\list.c" />
+    <ClCompile Include="..\..\..\FreeRTOS-Kernel\portable\MemMang\heap_4.c" />
+    <ClCompile Include="..\..\..\FreeRTOS-Kernel\portable\MSVC-MingW\port.c" />
+    <ClCompile Include="..\..\..\FreeRTOS-Kernel\queue.c" />
+    <ClCompile Include="..\..\..\FreeRTOS-Kernel\tasks.c" />
+    <ClCompile Include="..\..\..\FreeRTOS-Kernel\timers.c" />
     <ClCompile Include="..\..\..\Supporting_Functions\supporting_functions.c" />
     <ClCompile Include="..\main.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\FreeRTOS_Source\include\event_groups.h" />
-    <ClInclude Include="..\..\..\FreeRTOS_Source\include\list.h" />
-    <ClInclude Include="..\..\..\FreeRTOS_Source\include\queue.h" />
-    <ClInclude Include="..\..\..\FreeRTOS_Source\include\semphr.h" />
-    <ClInclude Include="..\..\..\FreeRTOS_Source\include\task.h" />
-    <ClInclude Include="..\..\..\FreeRTOS_Source\include\timers.h" />
+    <ClInclude Include="..\..\..\FreeRTOS-Kernel\include\event_groups.h" />
+    <ClInclude Include="..\..\..\FreeRTOS-Kernel\include\list.h" />
+    <ClInclude Include="..\..\..\FreeRTOS-Kernel\include\queue.h" />
+    <ClInclude Include="..\..\..\FreeRTOS-Kernel\include\semphr.h" />
+    <ClInclude Include="..\..\..\FreeRTOS-Kernel\include\task.h" />
+    <ClInclude Include="..\..\..\FreeRTOS-Kernel\include\timers.h" />
     <ClInclude Include="..\FreeRTOSConfig.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
