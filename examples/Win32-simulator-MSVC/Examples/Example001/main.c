@@ -1,5 +1,4 @@
 /*
- *
  *  Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
  *
  *  SPDX-License-Identifier: MIT-0
@@ -10,26 +9,6 @@
  * 
  *  This contains the Windows port implementation of the examples listed in the 
  *  FreeRTOS book Mastering_the_FreeRTOS_Real_Time_Kernel.
- *
- *  FreeRTOS is distributed in the hope that it will be useful, but WITHOUT ANY
- *  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- *  FOR A PARTICULAR PURPOSE.  Full license text is available on the following
- *  link: http://www.freertos.org/a00114.html
- *
- *  http://www.FreeRTOS.org/FAQHelp.html - Having a problem?  Start by reading
- *  the FAQ page "My application does not run, what could be wrong?".  Have you
- *  defined configASSERT()?
- *
- *  http://www.FreeRTOS.org/support - In return for receiving this top quality
- *  embedded software for free we request you assist our global community by
- *  participating in the support forum.
- *
- *  http://www.FreeRTOS.org/plus - A selection of FreeRTOS ecosystem products,
- *  including FreeRTOS+Trace - an indispensable productivity tool, a DOS
- *  compatible FAT file system, and our tiny thread aware UDP/IP stack.
- *
- *  http://www.FreeRTOS.org/labs - Where new FreeRTOS products go to incubate.
- *  Come and try FreeRTOS+TCP, our new open source TCP/IP stack for FreeRTOS.
  *
  */
 
