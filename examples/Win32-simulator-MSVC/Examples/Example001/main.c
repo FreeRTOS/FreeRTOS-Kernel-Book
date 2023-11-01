@@ -1,14 +1,15 @@
 /*
- *  This contains the Windows port implementation of the examples listed in the 
- *  FreeRTOS book Mastering_the_FreeRTOS_Real_Time_Kernel.
  *
- *  Copyright (C) 2021 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+ *  Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
  *
- *  SPDX-License-Identifier: MIT
+ *  SPDX-License-Identifier: MIT-0
  * 
  *  VISIT http://www.FreeRTOS.org TO ENSURE YOU ARE USING THE LATEST VERSION.
  *
  *  This file is part of the FreeRTOS distribution.
+ * 
+ *  This contains the Windows port implementation of the examples listed in the 
+ *  FreeRTOS book Mastering_the_FreeRTOS_Real_Time_Kernel.
  *
  *  FreeRTOS is distributed in the hope that it will be useful, but WITHOUT ANY
  *  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
