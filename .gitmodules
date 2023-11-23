@@ -1,0 +1,3 @@
+[submodule "examples/Win32-simulator-MSVC/FreeRTOS-Kernel"]
+	path = examples/Win32-simulator-MSVC/FreeRTOS-Kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
