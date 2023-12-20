@@ -2,4 +2,5 @@
 
 This repo contains the contents for FreeRTOS kernel book.
 
-The work is in progress... 
+> [!Note]
+> The work is in progress... 
