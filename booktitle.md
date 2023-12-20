@@ -6,7 +6,7 @@ Richard Barry
 -and-
 The FreeRTOS Team
 
-V10.x Edition.
+Release Edition 1.0
 
 *All text, source code, and diagrams are the exclusive property of Amazon
 Web Services. unless otherwise noted inline.*
