@@ -10,7 +10,7 @@
 
 ### Richard Barry -and- The FreeRTOS Team ###
 
-**Release Edition 1.0**
+**Release Edition - TBD**
 
 </br>
 </br>
