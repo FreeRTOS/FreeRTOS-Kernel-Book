@@ -1,8 +1,8 @@
 <div align="center">
 
-<!--![Image](https://github.com/sirnish/FreeRTOS-Kernel-Book-toc/blob/main/media/freeRTOS.png)-->
+<!--![Image](https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/blob/main/media/freeRTOS.png)-->
 
-<img src="https://github.com/sirnish/FreeRTOS-Kernel-Book-toc/blob/main/media/freeRTOS.png" alt="" height="180" width="250"/>
+<img src="https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/blob/main/media/freeRTOS.png" alt="" height="180" width="250"/>
 
 # Mastering the FreeRTOS™[^1][^2] Real Time Kernel
 
