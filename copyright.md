@@ -1,6 +1,7 @@
 <div align="center">
   
-</br>
+<img src="https://github.com/sirnish/FreeRTOS-Kernel-Book-toc/blob/main/media/Aws-Logo-PNG-HD.png" alt="" height="140" width="250"/>
+
 </br>
 </br>
 </br>
@@ -14,6 +15,8 @@
 
 </div>
 
+</br>
+</br>
 </br>
 </br>
 </br>
