@@ -1,6 +1,6 @@
 <div align="center">
   
-<img src="https://github.com/FreeRTOS-Kernel-Book/blob/main/media/Aws-Logo-PNG-HD.png" alt="" height="140" width="250"/>
+<img src="https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/blob/main/media/Aws-Logo-PNG-HD.png" alt="" height="140" width="250"/>
 
 </br>
 </br>
