@@ -1,9 +1,5 @@
 <div align="center">
 
-<!--![Image](https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/blob/main/media/freeRTOS.png)-->
-
-<!--<img src="https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/blob/main/media/freeRTOS.png" alt="" height="180" width="250"/>-->
-
 <img src="./media/freeRTOS.png" alt="" height="180" width="250"/>
 
 
