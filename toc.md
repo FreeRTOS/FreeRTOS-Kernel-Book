@@ -286,6 +286,33 @@
     + [13.5.7 Symptom: Calling API functions while the scheduler is suspended, or from inside a critical section, causes the application to crash](ch13.md#1357-symptom-calling-api-functions-while-the-scheduler-is-suspended-or-from-inside-a-critical-section-causes-the-application-to-crash)
   + [13.6 Additional Debugging Steps](ch13.md#136-additional-debugging-steps)
 
+
+## Examples:
++ [Example 4.1 Creating tasks](ch04.md#example4.1)
++ [Example 4.2 Using the task parameter](ch04.md#example4.2)
++ [Example 4.3 Experimenting with priorities](ch04.md#example4.3)
++ [Example 4.4 Using the *Blocked* state to create a delay](ch04.md#example4.4)
++ [Example 4.5 Converting the example tasks to use vTaskDelayUntil()](ch04.md#example4.5)
++ [Example 4.6 Combining blocking and non-blocking tasks](ch04.md#example4.6)
++ [Example 4.7 Defining an idle task hook function](ch04.md#example4.7)
++ [Example 4.8 Deleting tasks](ch04.md#example4.8)
++ [Example 5.1 Blocking when receiving from a queue](ch05.md#example5.1)
++ [Example 5.2 Blocking when sending to a queue, and sending structures on a queue](ch05.md#example5.2)
++ [Example 5.3 Using a Queue Set](ch05.md#example5.3)
++ [Example 6.1 Creating one-shot and auto-reload timers](ch06.md#example6.1)
++ [Example 6.2 Using the callback function parameter and the software timer ID](ch06.md#example6.2)
++ [Example 6.3 Resetting a software timer](ch06.md#example6.3)
++ [Example 7.1 Using a binary semaphore to synchronize a task with an interrupt](ch07.md#example7.1)
++ [Example 7.2 Using a counting semaphore to synchronize a task with an interrupt](ch07.md#example7.2)
++ [Example 7.3 Centralized deferred interrupt processing](ch07.md#example7.3)
++ [Example 7.4 Sending and receiving on a queue from within an interrupt](ch07.md#example7.4)
++ [Example 8.1 Rewriting vPrintString() to use a semaphore](ch08.md#example8.1)
++ [Example 8.2 The alternative implementation for print task](ch08.md#example8.2)
++ [Example 9.1 Experimenting with event groups](ch09.md#example9.1)
++ [Example 9.2 Synchronizing tasks](ch09.md#example9.2)
++ [Example 10.1 Using a task notification in place of a semaphore, method 1](ch10.md#example10.1)
++ [Example 10.2 Using a task notification in place of a semaphore, method 2](ch10.md#example10.2)
+
 ## Figures:
 + [Figure 2.1 Top level directories within the FreeRTOS distribution](ch02.md#fig2.1)
 + [Figure 2.2 Core FreeRTOS source files within the FreeRTOS directory tree](ch02.md#fig2.2)
@@ -570,37 +597,6 @@
 + [Listing 13.1 The uxTaskGetStackHighWaterMark() API function prototype](ch13.md#list13.1)
 + [Listing 13.2 The uxTaskGetStackHighWaterMark2() API function prototype](ch13.md#list13.2)
 + [Listing 13.3 The stack overflow hook function prototype](ch13.md#list13.3)
-
-## Examples:
-+ [Example 4.1 Creating tasks](ch04.md#example4.1)
-+ [Example 4.2 Using the task parameter](ch04.md#example4.2)
-+ [Example 4.3 Experimenting with priorities](ch04.md#example4.3)
-+ [Example 4.4 Using the *Blocked* state to create a delay](ch04.md#example4.4)
-+ [Example 4.5 Converting the example tasks to use vTaskDelayUntil()](ch04.md#example4.5)
-+ [Example 4.6 Combining blocking and non-blocking tasks](ch04.md#example4.6)
-+ [Example 4.7 Defining an idle task hook function](ch04.md#example4.7)
-+ [Example 4.8 Deleting tasks](ch04.md#example4.8)
-+ [Example 5.1 Blocking when receiving from a queue](ch05.md#example5.1)
-+ [Example 5.2 Blocking when sending to a queue, and sending structures on a queue](ch05.md#example5.2)
-+ [Example 5.3 Using a Queue Set](ch05.md#example5.3)
-+ [Example 6.1 Creating one-shot and auto-reload timers](ch06.md#example6.1)
-+ [Example 6.2 Using the callback function parameter and the software timer ID](ch06.md#example6.2)
-+ [Example 6.3 Resetting a software timer](ch06.md#example6.3)
-+ [Example 7.1 Using a binary semaphore to synchronize a task with an interrupt](ch07.md#example7.1)
-+ [Example 7.2 Using a counting semaphore to synchronize a task with an interrupt](ch07.md#example7.2)
-+ [Example 7.3 Centralized deferred interrupt processing](ch07.md#example7.3)
-+ [Example 7.4 Sending and receiving on a queue from within an interrupt](ch07.md#example7.4)
-+ [Example 8.1 Rewriting vPrintString() to use a semaphore](ch08.md#example8.1)
-+ [Example 8.2 The alternative implementation for print task](ch08.md#example8.2)
-+ [Example 9.1 Experimenting with event groups](ch09.md#example9.1)
-+ [Example 9.2 Synchronizing tasks](ch09.md#example9.2)
-+ [Example 10.1 Using a task notification in place of a semaphore, method 1](ch10.md#example10.1)
-+ [Example 10.2 Using a task notification in place of a semaphore, method 2](ch10.md#example10.2)
-
-
-
-
-
 
 ## Tables:
 + [Table 1 FreeRTOS source files to include in the project](ch02.md#tbl1)
