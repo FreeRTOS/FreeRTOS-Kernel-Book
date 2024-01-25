@@ -591,6 +591,7 @@
 + [Example 7.3 Centralized deferred interrupt processing](ch07.md#example7.3)
 + [Example 7.4 Sending and receiving on a queue from within an interrupt](ch07.md#example7.4)
 + [Example 8.1 Rewriting vPrintString() to use a semaphore](ch08.md#example8.1)
++ [Example 8.2 The alternative implementation for print task](ch08.md#example8.2)
 + [Example 9.1 Experimenting with event groups](ch09.md#example9.1)
 + [Example 9.2 Synchronizing tasks](ch09.md#example9.2)
 + [Example 10.1 Using a task notification in place of a semaphore, method 1](ch10.md#example10.1)
