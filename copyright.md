@@ -68,15 +68,15 @@
 </br>
 
 
-
-<div align = "center">
+<div align="center";>
 
 * * *
-> [!Note]
-> This text is provided for free. **In return we ask that you create a pull request to provide corrections**.
-> Post feedback and comments to [https://forums.FreeRTOS.org](https://forums.FreeRTOS.org).
+
+*This text is provided for free. **In return we ask that you create a pull request to provide corrections**.*
+</br>
+*Post feedback and comments to [https://forums.FreeRTOS.org](https://forums.FreeRTOS.org).*
+
 * * *
-
-
 
 </div>
+
