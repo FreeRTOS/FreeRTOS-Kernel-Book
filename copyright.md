@@ -1,9 +1,11 @@
 <div align="center">
 
-<img src="./media/aws-logo-hr.png" alt="" height="140" width="250"/>
+</br>
+</br>
 
-</br>
-</br>
+<img src="./media/aws-logo-hr.png" alt="" height="100" width="190"/>
+
+
 </br>
 </br>
 
@@ -71,10 +73,10 @@
 
 * * *
 > [!Note]
-> This text is provided for free. **In return we ask that you create a pull
-> request to provide corrections**.  Post feedback and comments to [https://forums.FreeRTOS.org](https://forums.FreeRTOS.org).
+> This text is provided for free. **In return we ask that you create a pull request to provide corrections**.
+> Post feedback and comments to [https://forums.FreeRTOS.org](https://forums.FreeRTOS.org).
 * * *
 
-</div>
+
 
 </div>
