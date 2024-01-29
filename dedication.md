@@ -10,9 +10,9 @@
 </br>
 </br>
   
-***To Caroline, India and Max.*** - R.B.
+***To Caroline, India and Max.*** **- R.B.**
 
-***Dedicated to the next generation of great systems powered by FreeRTOS.*** - J.J.
+***Dedicated to the next generation of great systems powered by FreeRTOS.*** **- J.J.**
 
 </br>
 </br>
