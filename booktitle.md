@@ -63,7 +63,7 @@
 </br>
 
 
-<div align = "right">
+<div align = "left">
 [^1]: FreeRTOS™, FreeRTOS.org™ and the FreeRTOS logo are trademarks of Amazon Web Services.
 [^2]: OPEN**RTOS**<sup>®</sup> and SAFE**RTOS**<sup>®</sup> are trademarks of WITTENSTEIN High Integrity Systems Ltd. All other brands or product names are the property of their respective holders.
 </div>
