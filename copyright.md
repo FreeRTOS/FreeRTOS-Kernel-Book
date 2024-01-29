@@ -22,11 +22,59 @@
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+
+<div align = "center">
 
 * * *
 > [!Note]
 > This text is provided for free. **In return we ask that you create a pull
 > request to provide corrections**.  Post feedback and comments to [https://forums.FreeRTOS.org](https://forums.FreeRTOS.org).
 * * *
+
+</div>
 
 </div>
