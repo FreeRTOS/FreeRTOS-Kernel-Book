@@ -1,5 +1,8 @@
 <div align="center">
 
+</br>
+</br>
+
 <img src="./media/freeRTOS.png" alt="" height="180" width="250"/>
 
 
@@ -15,11 +18,10 @@
 </br>
 </br>
 </br>
-</br>
 
 </div>
 
-</br>
+
 </br>
 </br>
 </br>
