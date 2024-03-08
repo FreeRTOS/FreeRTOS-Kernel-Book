@@ -603,4 +603,5 @@
 + [Table 2 TickType\_t data type and the configTICK\_TYPE\_WIDTH\_IN\_BITS configuration](ch02.md#tbl2)
 + [Table 3 Macro prefixes](ch02.md#tbl3)
 + [Table 4 Common macro definitions](ch02.md#tbl4)
-+ [Table 5 The Effect of the uxBitsToWaitFor and xWaitForAllBits Parameters](ch09.md#tbl5)
++ [Table 5 The FreeRTOSConfig.h settings that configure the kernel to use various scheduling algorithms](ch04.md#tbl5)
++ [Table 6 The Effect of the uxBitsToWaitFor and xWaitForAllBits Parameters](ch09.md#tbl6)
