@@ -2,12 +2,12 @@
  *  Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
  *
  *  SPDX-License-Identifier: MIT-0
- * 
+ *
  *  VISIT http://www.FreeRTOS.org TO ENSURE YOU ARE USING THE LATEST VERSION.
  *
  *  This file is part of the FreeRTOS distribution.
- * 
- *  This contains the Windows port implementation of the examples listed in the 
+ *
+ *  This contains the Windows port implementation of the examples listed in the
  *  FreeRTOS book Mastering_the_FreeRTOS_Real_Time_Kernel.
  *
  */
@@ -89,7 +89,7 @@ int main( void )
 
 static void vEventBitSettingTask( void * pvParameters )
 {
-    const TickType_t xDelay200ms = pdMS_TO_TICKS( 200UL ), xDontBlock = 0;
+    const TickType_t xDelay200ms = pdMS_TO_TICKS( 200UL );
 
     for( ; ; )
     {
