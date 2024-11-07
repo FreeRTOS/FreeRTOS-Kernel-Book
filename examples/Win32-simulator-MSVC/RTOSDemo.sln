@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example001", "Examples\Example001\MSVC\Example001.vcxproj", "{CC20699F-194B-483E-BAE5-1D0589FBF13E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example002", "Examples\Example002\MSVC\Example002.vcxproj", "{35B09741-7C4C-43CA-B159-2249C562D781}"
@@ -50,6 +52,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example024", "Examples\Example024\MSVC\Example024.vcxproj", "{4495B928-092E-47A9-8A87-42356AFDC4F2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example025", "Examples\Example025\MSVC\Example025.vcxproj", "{32F7F49A-39DC-41F0-A567-318ADD0718D5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example026", "Examples\Example026\MSVC\Example026.vcxproj", "{99A1BBD3-9F17-4F5D-A352-E991E66EEACA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,6 +161,10 @@ Global
 		{32F7F49A-39DC-41F0-A567-318ADD0718D5}.Debug|Win32.Build.0 = Debug|Win32
 		{32F7F49A-39DC-41F0-A567-318ADD0718D5}.Release|Win32.ActiveCfg = Release|Win32
 		{32F7F49A-39DC-41F0-A567-318ADD0718D5}.Release|Win32.Build.0 = Release|Win32
+		{99A1BBD3-9F17-4F5D-A352-E991E66EEACA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{99A1BBD3-9F17-4F5D-A352-E991E66EEACA}.Debug|Win32.Build.0 = Debug|Win32
+		{99A1BBD3-9F17-4F5D-A352-E991E66EEACA}.Release|Win32.ActiveCfg = Release|Win32
+		{99A1BBD3-9F17-4F5D-A352-E991E66EEACA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
